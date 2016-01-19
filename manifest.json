@@ -1,0 +1,31 @@
+{
+  "author": "daoyu@umu.com",
+  "manifest_version": 2,
+  "name": "crawl data",
+  "version": "1.3.0",
+  "description": "抓取美国城市数据",
+  "background": {
+    "scripts": [
+    ]
+  },
+  "icons": {
+    "16": "images/umu16.png",
+    "48": "images/umu48.png",
+    "128": "images/umu128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://haoweichi.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://haoweichi.com/*"
+  ],
+
+  "homepage_url": "http://daoyuly.github.io/"
+}
